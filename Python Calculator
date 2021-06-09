@@ -1,0 +1,26 @@
+oper = str(input("Operatie? "))
+
+a = input("Eerste getal? ")
+b = input("Tweede getal? ")
+getal1 = float (a)
+getal2 = float (b)
+
+#calculator
+if oper == "+":
+    print("resultaat: ", getal1 + getal2)
+elif oper == "-":
+    print("resultaat: ", getal1 - getal2)
+elif oper == "*":
+    print("resultaat: ", getal1 * getal2)
+elif oper == "/":
+    if oper == "/" and getal2 == 0:
+        print("Kan niet delen door 0")
+    else:
+        print("resultaat: ", getal1 /getal2)
+elif oper == "%":
+    if getal2 == 0:
+        print("Kan niet delen door 0")
+    else:
+        print("resultaat: ", getal1 % getal2)
+else:
+    print("Kan berekening niet uitvoeren")
